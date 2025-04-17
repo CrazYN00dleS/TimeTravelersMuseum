@@ -513,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 3992934537725953122, guid: 208c2548f5e1da646af2d1b9e3cf4cf9,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4719646798650747941, guid: 208c2548f5e1da646af2d1b9e3cf4cf9,
         type: 3}
@@ -1316,7 +1316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &503592700
 Transform:
   m_ObjectHideFlags: 0
@@ -1482,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &557733317
 Transform:
   m_ObjectHideFlags: 0
@@ -2488,6 +2488,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1154457192}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1181873502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.022707
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7908463
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.5612607
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 943247f36d70ff6448f5710c4f453da9,
+        type: 3}
+      propertyPath: m_Name
+      value: Sliced sourdough bread on board
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 943247f36d70ff6448f5710c4f453da9, type: 3}
 --- !u!114 &1189469104 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6208702006141355430, guid: 208c2548f5e1da646af2d1b9e3cf4cf9,
@@ -5168,7 +5236,7 @@ PrefabInstance:
     - target: {fileID: 5311395694275460507, guid: 813642986a89f3a45a88639d20996f29,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5335611043037011896, guid: 813642986a89f3a45a88639d20996f29,
         type: 3}
@@ -7298,7 +7366,7 @@ PrefabInstance:
     - target: {fileID: 950452678824256546, guid: 03490eaf7fd83564291a84ec3e4015ad,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 996697081011487312, guid: 03490eaf7fd83564291a84ec3e4015ad,
         type: 3}
@@ -10325,3 +10393,4 @@ SceneRoots:
   - {fileID: 503592700}
   - {fileID: 1976756591}
   - {fileID: 557733317}
+  - {fileID: 1181873502}
