@@ -25,7 +25,7 @@ public class PointCloudRenderer : MonoBehaviour
 
         if (autoLoadOnStart)
         {
-            string path = Path.Combine(Application.dataPath, plyFileName);
+            string path = Path.Combine("D:\\PolycamObject\\GS_scene", plyFileName);
 
             LoadPLY(path);
         }
