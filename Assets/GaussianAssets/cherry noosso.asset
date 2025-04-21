@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b71fae31e6c7d438e8566dc713e666, type: 3}
+  m_Name: cherry noosso
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 934846
+  m_BoundsMin: {x: -0.5595629, y: -0.27739692, z: -0.48419}
+  m_BoundsMax: {x: 0.48377982, y: 0.59259874, z: 0.5076684}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: f3c9641601c22da5a393499e54167d66
+  m_PosFormat: 2
+  m_ScaleFormat: 2
+  m_SHFormat: 3
+  m_ColorFormat: 2
+  m_PosData: {fileID: 4900000, guid: 2161674835600ff41a5b86639dbb7c1a, type: 3}
+  m_ColorData: {fileID: 4900000, guid: 52959cc699679dc49b6658f95b2289f1, type: 3}
+  m_OtherData: {fileID: 4900000, guid: 4943240b8e6ce2344926612b81603add, type: 3}
+  m_SHData: {fileID: 4900000, guid: 1707b4f4a799d78439c0452350740df4, type: 3}
+  m_ChunkData: {fileID: 4900000, guid: 5790609adfbf8864985927fc877e41a9, type: 3}
+  m_Cameras: []
