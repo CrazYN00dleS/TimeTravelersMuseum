@@ -21,8 +21,8 @@ TagManager:
   - Mirror
   - 
   - 
-  - 
-  - 
+  - MiniMapIgnore
+  - PlayerIgnore
   - 
   - 
   - 
