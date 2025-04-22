@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9197661652300879103}
   - component: {fileID: 2924525203605329754}
+  - component: {fileID: 2658281002978579543}
   m_Layer: 0
   m_Name: Crystal Ball
   m_TagString: Untagged
@@ -55,6 +56,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.2271321, z: 1}
   m_Center: {x: 0, y: -0.11356613, z: 0}
+--- !u!114 &2658281002978579543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855937622950000578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdecb4f1dd9cd724fbdded69870f4a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAsset: {fileID: 11400000, guid: a193253fdeb699f468e40fe67a0ca076, type: 2}
+  sharedRenderer: {fileID: 0}
+  teleportTarget: {fileID: 0}
 --- !u!1 &3386507710542012462
 GameObject:
   m_ObjectHideFlags: 0
