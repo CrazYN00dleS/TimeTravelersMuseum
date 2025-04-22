@@ -10,7 +10,6 @@ TagManager:
   - PlayerHand
   - Destroyer
   - Controller
-  - MinimapCamera
   layers:
   - Default
   - TransparentFX
@@ -22,8 +21,8 @@ TagManager:
   - Mirror
   - 
   - 
-  - Roof
-  - PlayerMiniMapMark
+  - 
+  - 
   - 
   - 
   - 
