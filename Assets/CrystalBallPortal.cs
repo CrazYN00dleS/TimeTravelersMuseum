@@ -7,6 +7,10 @@ using Unity.XR.CoreUtils;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.UI;
+using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 public class CrystalBallPortal : MonoBehaviour
 {
@@ -41,6 +45,14 @@ public class CrystalBallPortal : MonoBehaviour
     private Collider grabberCollider; // Store the collider of the grabbing controller
     private bool teleportEnabled = false; // Only allow teleport after a short delay from grabbing
 
+    [Header("Input")]
+    public InputActionReference triggerAction; // Assign in Inspector (e.g. XRI LeftHand/Select or RightHand/Select)
+    private bool wasButtonPressed = false;
+    public TrackedDeviceGraphicRaycaster xrUIRaycaster; // Assign in Inspector
+    public Canvas minimapCanvas; // Assign your UI canvas in Inspector
+
+
+    private float personheight = 0;
     void Awake()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
@@ -56,82 +68,190 @@ public class CrystalBallPortal : MonoBehaviour
 
     void Update()
     {
-        if (heldBy != null && rayOrigin != null)
+        if (heldBy == null || rayOrigin == null) return;
+
+        
+
+        // Check if trigger is pressed using the Input System
+        bool isButtonPressed = false;
+        if (triggerAction != null && triggerAction.action.enabled)
         {
-            // Visualize the ray for debugging
-            Debug.DrawRay(rayOrigin.position, rayOrigin.forward * 10f, Color.red);
-
-            if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out RaycastHit hit, 10f, minimapLayer))
-            {
-                // Highlight the hit point for debugging
-                Debug.DrawLine(hit.point, hit.point + Vector3.up * 0.1f, Color.green);
-                HandleMinimapClick(hit);
-            }
+            isButtonPressed = triggerAction.action.ReadValue<float>() > 0.5f;
         }
-    }
 
-    void HandleMinimapClick(RaycastHit hit)
+        //// Only perform raycast when button is newly pressed
+        //if (isButtonPressed && !wasButtonPressed)
+        //{
+        //    Debug.Log("Trigger pressed! Attempting raycast...");
+        //    PerformRaycast();
+        //}
+        //Debug.Log(selectedTeleportPoint);
+        // Update the button state
+        wasButtonPressed = isButtonPressed;
+    }
+    //void PerformRaycast()
+    //{
+    //    Debug.Log($"Raycasting from {rayOrigin.position} in direction {rayOrigin.forward}");
+    //    // Draw a longer visible ray for debugging in the scene view
+    //    Debug.DrawRay(rayOrigin.position, rayOrigin.forward * 20f, Color.red, 1f);
+    //    // First try physics raycast
+    //    if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out RaycastHit hit, 10f, minimapLayer))
+    //    {
+    //        Debug.Log($"Hit object: {hit.collider.gameObject.name} at point {hit.point}");
+    //        HandleMinimapClick(hit);
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("No physics hit detected, trying UI raycast");
+
+    //        // Try UI raycast for Canvas elements
+    //        RaycastUI();
+    //    }
+    //}
+
+    //void RaycastUI()
+    //{
+    //    if (minimapCanvas == null || EventSystem.current == null)
+    //    {
+    //        Debug.LogError("Missing Canvas or EventSystem references!");
+    //        return;
+    //    }
+
+    //    // Create ray for UI raycasting
+    //    Vector3 rayOriginPos = rayOrigin.position;
+    //    Vector3 rayDirection = rayOrigin.forward;
+
+    //    // Create a list to store results
+    //    List<RaycastResult> results = new List<RaycastResult>();
+
+    //    // Create pointer event data for the raycast
+    //    PointerEventData eventData = new PointerEventData(EventSystem.current);
+    //    eventData.position = Camera.main.WorldToScreenPoint(rayOriginPos + rayDirection * 5f);
+
+    //    // Raycast against UI
+    //    EventSystem.current.RaycastAll(eventData, results);
+
+    //    // Debug all results
+    //    Debug.Log($"UI Raycast found {results.Count} hits");
+
+    //    foreach (RaycastResult result in results)
+    //    {
+    //        Debug.Log($"Hit UI: {result.gameObject.name}");
+
+    //        // Check if this is our minimap image
+    //        RawImage rawImage = result.gameObject.GetComponent<RawImage>();
+    //        if (rawImage != null && rawImage == minimapImage)
+    //        {
+    //            Debug.Log("Found our minimap image!");
+
+    //            // Convert screen point to local point in RawImage
+    //            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+    //                minimapImage.rectTransform,
+    //                result.screenPosition,
+    //                result.module.eventCamera,
+    //                out Vector2 localPoint))
+    //            {
+    //                // Calculate normalized coordinates within the image
+    //                Rect rect = minimapImage.rectTransform.rect;
+    //                Vector2 normalizedPoint = new Vector2(
+    //                    (localPoint.x - rect.x) / rect.width,
+    //                    (localPoint.y - rect.y) / rect.height
+    //                );
+
+    //                // Convert to viewport coordinates (0-1)
+    //                Vector2 viewportPoint = new Vector2(
+    //                    Mathf.Clamp01(normalizedPoint.x),
+    //                    Mathf.Clamp01(normalizedPoint.y)
+    //                );
+
+    //                Debug.Log($"Normalized point: {normalizedPoint}, Viewport point: {viewportPoint}");
+    //                PlaceTeleportMarkerFromViewport(viewportPoint);
+    //                return;
+    //            }
+    //        }
+    //    }
+
+    //    Debug.Log("No valid UI hits on minimap");
+    //}
+
+
+    public void SetTeleportTarget(Vector3 position)
     {
-        // Check if the hit object contains our RawImage
-        if (hit.collider.gameObject.GetComponentInParent<RawImage>() == minimapImage ||
-            hit.collider.gameObject == minimapImage.gameObject)
+        // Store the selected teleport point
+        selectedTeleportPoint = position;
+
+        // Update the marker's position
+        if (teleportMarker != null)
         {
-            // Convert world hit point to screen space
-            Vector2 screenPoint = Camera.main.WorldToScreenPoint(hit.point);
-
-            // Convert screen point to UI local point
-            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                minimapImage.rectTransform,
-                screenPoint,
-                null, // No camera needed for screen space coordinates
-                out Vector2 localPoint))
-            {
-                // Calculate normalized coordinates (0-1) within the RawImage
-                Rect rect = minimapImage.rectTransform.rect;
-                Vector2 normalizedPoint = new Vector2(
-                    (localPoint.x - rect.x) / rect.width,
-                    (localPoint.y - rect.y) / rect.height
-                );
-
-                // Convert normalized coordinates to viewport coordinates
-                // Clamp to ensure we stay within bounds
-                Vector2 viewportPoint = new Vector2(
-                    Mathf.Clamp01(normalizedPoint.x),
-                    Mathf.Clamp01(normalizedPoint.y)
-                );
-
-                PlaceTeleportMarkerFromViewport(viewportPoint);
-            }
+            teleportMarker.transform.position = position;
+            teleportMarker.SetActive(true);
         }
     }
 
-    void PlaceTeleportMarkerFromViewport(Vector2 viewportPoint)
-    {
-        // Convert viewport point to world position using the minimap camera
-        // We want a point on the ground plane, so use a ray from the camera
-        Ray ray = minimapCamera.ViewportPointToRay(new Vector3(viewportPoint.x, viewportPoint.y, 0));
+    //void HandleMinimapClick(RaycastHit hit)
+    //{
+    //    // Check if the hit object contains our RawImage
+       
+    //    if (hit.collider.gameObject.GetComponentInParent<RawImage>() == minimapImage ||
+    //        hit.collider.gameObject == minimapImage.gameObject)
+    //    {
+    //        Debug.Log("contains RawImage");
+    //        // Convert world hit point to screen space
+    //        Vector2 screenPoint = Camera.main.WorldToScreenPoint(hit.point);
 
-        // Define the ground plane (assuming Y is up and ground is at Y=0)
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+    //        // Convert screen point to UI local point
+    //        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+    //            minimapImage.rectTransform,
+    //            screenPoint,
+    //            null, // No camera needed for screen space coordinates
+    //            out Vector2 localPoint))
+    //        {
+    //            // Calculate normalized coordinates (0-1) within the RawImage
+    //            Rect rect = minimapImage.rectTransform.rect;
+    //            Vector2 normalizedPoint = new Vector2(
+    //                (localPoint.x - rect.x) / rect.width,
+    //                (localPoint.y - rect.y) / rect.height
+    //            );
 
-        // Cast ray against ground plane
-        if (groundPlane.Raycast(ray, out float distance))
-        {
-            Vector3 worldPos = ray.GetPoint(distance);
+    //            // Convert normalized coordinates to viewport coordinates
+    //            // Clamp to ensure we stay within bounds
+    //            Vector2 viewportPoint = new Vector2(
+    //                Mathf.Clamp01(normalizedPoint.x),
+    //                Mathf.Clamp01(normalizedPoint.y)
+    //            );
 
-            // Store the selected teleport point
-            selectedTeleportPoint = worldPos;
+    //            PlaceTeleportMarkerFromViewport(viewportPoint);
+    //        }
+    //    }
+    //}
 
-            // Place the marker at the target location
-            if (teleportMarker != null)
-            {
-                teleportMarker.transform.position = worldPos;
-                teleportMarker.SetActive(true);
+    //void PlaceTeleportMarkerFromViewport(Vector2 viewportPoint)
+    //{
+    //    // Convert viewport point to world position using the minimap camera
+    //    // We want a point on the ground plane, so use a ray from the camera
+    //    Ray ray = minimapCamera.ViewportPointToRay(new Vector3(viewportPoint.x, viewportPoint.y, 0));
 
-                Debug.Log($"Teleport marker placed at: {worldPos}");
-            }
-        }
-    }
+    //    // Define the ground plane (assuming Y is up and ground is at Y=0)
+    //    Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+
+    //    // Cast ray against ground plane
+    //    if (groundPlane.Raycast(ray, out float distance))
+    //    {
+    //        Vector3 worldPos = ray.GetPoint(distance);
+
+    //        // Store the selected teleport point
+    //        selectedTeleportPoint = worldPos;
+
+    //        // Place the marker at the target location
+    //        if (teleportMarker != null)
+    //        {
+    //            teleportMarker.transform.position = worldPos;
+    //            teleportMarker.SetActive(true);
+
+    //            Debug.Log($"Teleport marker placed at: {worldPos}");
+    //        }
+    //    }
+    //}
 
     void OnGrab(SelectEnterEventArgs args)
     {
@@ -212,7 +332,7 @@ public class CrystalBallPortal : MonoBehaviour
         if (teleportMarker != null)
             teleportMarker.SetActive(false);
 
-        selectedTeleportPoint = null;
+        //selectedTeleportPoint = null;
     }
 
     void OnTriggerEnter(Collider other)
@@ -255,7 +375,7 @@ public class CrystalBallPortal : MonoBehaviour
         // Prevent multiple teleports
         teleportEnabled = false;
 
-        // Disable grab interaction during teleport
+        // Disable grab interaction during teleport TODO!!!!!!!!!
         grabInteractable.enabled = false;
         if (moveProvider != null)
             moveProvider.enabled = false;
@@ -263,9 +383,9 @@ public class CrystalBallPortal : MonoBehaviour
         // Optional visual effect or feedback before teleport
         Debug.Log("Teleporting in " + teleportDelay + " seconds...");
         yield return new WaitForSeconds(teleportDelay);
-
+        Debug.Log(selectedTeleportPoint);
         Vector3 targetPos;
-        if (selectedTeleportPoint.HasValue)
+        if (selectedTeleportPoint!=null)
         {
             targetPos = selectedTeleportPoint.Value;
             Debug.Log("Teleporting to selected point: " + targetPos);
@@ -284,7 +404,8 @@ public class CrystalBallPortal : MonoBehaviour
         if (xrOrigin != null)
         {
             // Teleport the XR Origin to the target location
-            xrOrigin.MoveCameraToWorldLocation(targetPos);
+            //xrOrigin.MoveCameraToWorldLocation(targetPos);
+            xrOrigin.transform.position = targetPos;
         }
 
         // Re-enable movement after teleport
