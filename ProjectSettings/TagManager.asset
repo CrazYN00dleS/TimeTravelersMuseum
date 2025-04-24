@@ -15,6 +15,7 @@ TagManager:
   - RightController
   - InvisibleFrame
   - GuideAttraction
+  - GuideStart
   layers:
   - Default
   - TransparentFX
