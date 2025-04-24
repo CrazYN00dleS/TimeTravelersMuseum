@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b71fae31e6c7d438e8566dc713e666, type: 3}
+  m_Name: ArcViz Room
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 672977
+  m_BoundsMin: {x: -5.2967606, y: -2.5824769, z: -4.992429}
+  m_BoundsMax: {x: 5.0543833, y: 1.3586476, z: 5.212461}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: f506143859a6f1fa2ccb831b24a79f10
+  m_PosFormat: 2
+  m_ScaleFormat: 2
+  m_SHFormat: 3
+  m_ColorFormat: 2
+  m_PosData: {fileID: 4900000, guid: 8bd699c3d29c8464da6c92d5009dcc79, type: 3}
+  m_ColorData: {fileID: 4900000, guid: fb0a01c395b93424bad56c012a124cbd, type: 3}
+  m_OtherData: {fileID: 4900000, guid: b00e78d49c80ab942bdddfc07255ddcf, type: 3}
+  m_SHData: {fileID: 4900000, guid: 120267890b095c3479d6c35164ce03ea, type: 3}
+  m_ChunkData: {fileID: 4900000, guid: 15ffb250770ff15468f3f7529fe4e267, type: 3}
+  m_Cameras: []
