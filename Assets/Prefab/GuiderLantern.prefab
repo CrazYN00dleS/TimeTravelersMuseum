@@ -121,8 +121,8 @@ GameObject:
   - component: {fileID: 3807414275960962456}
   - component: {fileID: -7202360279353259137}
   m_Layer: 0
-  m_Name: GuiderLantern 1
-  m_TagString: Untagged
+  m_Name: GuiderLantern
+  m_TagString: GuideStart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
