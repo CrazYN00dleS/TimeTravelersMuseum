@@ -13,6 +13,7 @@ TagManager:
   - BallMinimap
   - LeftController
   - RightController
+  - InvisibleFrame
   layers:
   - Default
   - TransparentFX
