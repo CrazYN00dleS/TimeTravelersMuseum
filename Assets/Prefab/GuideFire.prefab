@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1343720497344525026}
   - component: {fileID: 3093189491902447575}
   - component: {fileID: 7754142181864941064}
+  - component: {fileID: -3696611481801798777}
   m_Layer: 0
   m_Name: GuideFire
   m_TagString: Untagged
@@ -150,7 +151,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Space: 0
+  Space: 2
   m_Property:
     m_Name: AttractTarget
   Target: {fileID: 0}
+--- !u!114 &-3696611481801798777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438947182792422142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4af945108a01e41804d6a1faa6d0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vfx: {fileID: 8859472727265707491}
+  m_Destination: {fileID: 0}
