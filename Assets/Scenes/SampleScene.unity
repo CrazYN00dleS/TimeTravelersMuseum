@@ -362,6 +362,38 @@ Transform:
   - {fileID: 9417389}
   m_Father: {fileID: 503592700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150109719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150109720}
+  m_Layer: 0
+  m_Name: MuseumContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150109720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150109719}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1154945068}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &158475618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5555,6 +5587,2760 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8134302614855669011, guid: c4a645c929982ea41a52b5037ee7d94d,
     type: 3}
   m_PrefabInstance: {fileID: 1154457192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1154945067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 150109720}
+    m_Modifications:
+    - target: {fileID: 88170614733079, guid: 813642986a89f3a45a88639d20996f29, type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9275458495674429, guid: 813642986a89f3a45a88639d20996f29, type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 41716512782678643, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 78271108298408408, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 130933693325225991, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 134311987721880677, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 136695853389356887, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 182794118457535892, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260605515060237145, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 291591466004538895, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304481153058027990, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 313619903554516394, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 320992684905857260, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 340978579442548344, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 403863365901039612, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430212840084798854, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 430415433367621069, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 504049561400852111, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508416906754205098, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 518527787904297225, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 522093428088252105, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 527407220009390812, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 530119056230227063, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 534307898320767107, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 542354173796995844, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 542366487126350281, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 585923528335714681, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 598852777078432582, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 601177421655746940, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 639764057607251197, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 644550262131357940, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 654751159378510782, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 692814498928966934, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 696616914693894925, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719226584650466661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730334187035407041, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739950367969007927, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 777532531330765466, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 787972847136509742, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 791541301234306999, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803011456415434137, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 830677099988082440, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830896528443044830, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 830896529163813082, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 836148505097110839, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 869789660487257278, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 886474261133095929, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 888280186025844527, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 888349836427035638, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 890229900048984200, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 895447758439343325, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 918254920736796040, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 918437314150247527, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 926967981116824433, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 940040956981963394, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 944015738855189882, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 956473718170208048, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964149077959356507, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 966536896228839938, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 989815680459511100, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 993997560066913282, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007377722908699581, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020380930413444863, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033847202248829009, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068364402030381201, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094418686458645587, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110172111095268243, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148878565264885030, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164500400359679629, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_text
+      value: '<b><u>Game Rules</u></b>
+
+
+        Move to the start position to begin
+        the countdown.
+
+
+        Grab the holds with either controller or hands and
+        climb to the top as fast as you can.
+
+
+        The first player to touch
+        the goal wins.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164500400359679629, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164500400359679629, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164500400359679629, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181061962907086703, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182072423852308985, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191323092093553158, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193276817910040118, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196126413237376336, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218182179053344803, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229565678367506894, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253985032459423906, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291812177799875864, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338373305847971690, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353493137770957100, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407174255222205883, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 232
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407174255222205883, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471703070293441776, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504532583251839167, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534956217707515456, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581714928136913828, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593894960913830134, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616182730511575246, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633784398060466410, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635353214507551829, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679229412439318151, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682538561528959328, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742034751275626438, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748613868858767069, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774306241419752985, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786886872809096550, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816736507985219512, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909274141423887875, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909862842196489298, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1913608680829680687, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 335474082
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963885688174202482, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979280200999796611, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022442228460045664, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2033710566764545596, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037450417687296760, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048984555278938998, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069706783650282397, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093052175509816916, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112272057350615129, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113183027100019668, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118559769002396074, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175687344467379587, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190004603321538968, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201586815713759264, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203440634629706834, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204965132827341506, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213690460063033506, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233854860514615136, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281930642001975291, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_Name
+      value: Mini Game - Climber (Variant)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315355225554863947, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332102382386143961, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344556388326601733, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349483022000600799, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362339428163087639, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364207799185619807, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372065723104935272, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383960012907118370, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384909753334102154, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2386585799352169524, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403318718557318640, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418213635219867233, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425706143195028223, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431154265126988375, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484739354279487357, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528246388055768988, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532978422496563585, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539952422831282988, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545954050121492688, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547494986070077780, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548294212659174987, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585454618408293206, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616375356811143177, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625674412134573710, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631027026723659605, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634644057373347446, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638747823337749974, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658830170845766801, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680710705181704472, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748353003792689548, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763215370743455557, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780471749942487503, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794090277979917264, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798929655373095661, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850876630859488945, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855399972185601746, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860594005642809841, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861124468473016403, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2899374391094851206, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911262838067046739, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952834688584041488, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2967626323711719694, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005910764828837655, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008120668755364923, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009268054612466882, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047023689258131542, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065772931741696902, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070881481121098776, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077540369156311051, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104146064143661356, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134162191677154713, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143889291833402030, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161377747223288514, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173021440090346533, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188268719626955556, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190252193878280940, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196667177471344006, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228404387141551296, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236702918251695115, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264016788877180258, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347250061291628645, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347604634920859194, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373279110700981316, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392692267815019764, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405645642815996993, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419429148421762171, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457778276718462649, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477643695772125619, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484580853324086558, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484719059740860130, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494307197590607271, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501039328831355406, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3526642930980782909, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596642346210700258, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598659175087497826, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600364158371568720, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605621304697409864, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610361014990801022, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611855151854981382, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646974606181061903, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656488136059160115, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662345496362036645, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662540958824538959, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673324387962320191, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720124670940639164, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777060657228677119, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779393691967688174, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807403615941194511, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814501548170689346, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815701358725252859, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826003816178864510, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851179719564428008, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873922087278953339, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897875078194988744, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902941828569795004, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911448897816191933, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958487818114631733, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959507058981639475, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974209225569750467, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989226638770803490, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034338930509488998, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036834152055601486, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4163981616824192494, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176292585366684119, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216704231818387835, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232338327171360550, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240113493923735779, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254473562709599056, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307384904570129471, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313845555919846495, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344739091832005801, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357760156241916833, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373392381994581143, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377999267578336614, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394725264545949788, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395399115198768794, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408675574859557222, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532870900917303580, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546539053102912522, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4566227225812682132, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588496318577051913, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598242469591948243, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623611513343519881, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633344979534796397, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708250351637375257, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708456052778866612, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740928596096287230, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787237582117605946, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803283076204491134, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846036971256352309, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871332517544510079, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924082223203904266, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936637067558996826, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968260502516491738, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998780195517906858, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010085832056398957, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5074136517297177364, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083538168006617964, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144258622701440796, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201006705866857841, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201135358643372286, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204383807903596052, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307021840642377687, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310730691195861288, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5311395694275460507, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335611043037011896, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351725080302447910, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377567729539244261, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5384283641753081607, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392602454572355892, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447821199741780667, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465324873215815752, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471453960486059247, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474111757578405507, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499224662740388074, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500655501758848627, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512058771152711825, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515610595351015621, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534279111007392559, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549915161310939648, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5620649094623757667, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675344519939139238, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5682312086650969466, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706568019929332926, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723946310170076684, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731851675331662026, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737123816664575356, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747843951835115825, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752002254627747733, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780090245769104135, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817578618407958401, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826321693148872433, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839284137417824698, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5871925804762638964, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873469534773742755, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876606536544434543, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879370095521976140, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888620038036975358, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889432777945396762, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5901694614923588444, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927035899883592519, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983728739637716171, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984522046458052456, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988318953405876192, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000148732439079750, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074038553639384215, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075935099467658116, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090575516649856085, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166234631745787437, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166367390898201811, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197045767468398363, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203765361091648193, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214183485740729783, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214957226317080030, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239884299560395072, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248130049943154497, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261704734462422617, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282774033583905070, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307487649260969172, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323137786099813193, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6329713170286031912, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353691677544890254, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357846388171588086, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359990438956312918, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361763589702245379, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427425212997850028, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433096813044804957, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434068028197416022, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452997846100753366, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462076961023037829, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471350120994894380, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501575096496023630, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518963447563730248, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556592737745781416, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563373036694084521, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570013837710419676, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594919919302616695, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660312138796934919, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662833141244326017, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697053899865711574, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704819083650114259, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735518451704890450, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768605529657280501, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769135619574816013, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791059634909074128, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806115219080689278, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814451640251032512, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825305652511081835, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6826930984330778709, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839290775581047730, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854721888833669698, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857191590529667416, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870922681305486817, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878069051537806272, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908241878940532821, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931561162491769791, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962625854210983950, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988874510019349075, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989483793130750365, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990135411577152717, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009512288607499745, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033321792293181534, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092663449882580024, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115147910427261116, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125646242400188046, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143476442162639878, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155563175695866332, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167064036595380667, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177769405044883042, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194801154599816866, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210814850158554001, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215129419188595822, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289363819098126915, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292422152306854687, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292636948200044193, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295785948918179232, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301678016532311863, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7316938677880558080, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319461891035893749, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328661622176499422, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352687152632489855, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375521714922418557, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394541808313738293, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394908328955390397, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447691191149864674, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7449016269587005648, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7458547436327663475, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521487711393727041, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536753265405343515, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556352546069618315, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566189145509666930, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586202411748726150, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642439628670353025, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656570560601057965, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667355359617780511, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668188953188880760, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672482648298526672, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681413708763465939, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689079386299159407, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705370100524115849, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711297465049468112, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729166800528305589, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740935811079887725, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9984602
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.05547335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767068985587557411, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 6.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776727253502894865, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.332
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776727253502894865, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.825
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776727253502894865, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99709743
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776727253502894865, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.07613634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776727253502894865, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 8.733
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781933124066089940, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826627873592426424, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826999684053586189, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833989396271223516, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840373751645600107, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840373751865150063, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842660416998945119, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860764469551035713, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871084064633291733, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875132252846306885, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885447873145461696, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889064156200866584, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932963971784724619, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954615229928816771, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954763072559559497, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961721001490174808, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964689654773237715, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7974113825113203822, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001007059677226028, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016663466779560552, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020337706224406060, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030408007351241202, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052231635883530847, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080493877170344790, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101085211923045757, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127526936965137023, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148651411268856635, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168663256980456428, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169289177310060055, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169289177664040211, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185021849881263475, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191095678847001118, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201913030005847852, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203837231951395392, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223222462549751468, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227302408102056962, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230013883945216925, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236336167052032640, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245274347157227514, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245433114667010025, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248042962744642675, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266180487936028528, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277908836263974703, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297902446535303683, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299727331384537523, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314281448754641387, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349302084307660883, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376750284266535190, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410212153934854301, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410212154320112537, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420898837376869340, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438913522194724992, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463043674452676219, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507614808980193775, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509302142910049690, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513775416205015080, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552912469494420494, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555801954703661018, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567111969986731083, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592481554063811527, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594035114784717109, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596398177742367087, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616547540177867555, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8619565346298272253, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629208687518364599, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645817943218779907, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651600468238531048, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653954765036891264, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663362151616128490, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677186359726120436, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678254083750902375, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693730132499052408, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702437409557099167, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704537215816213422, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715575135564712695, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720647129234185037, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738407570250507577, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743740600000604832, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8757332423881458084, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769761391489992674, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786014550473970739, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793361764691868885, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797903146479610018, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833782046351926650, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867323519586992969, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891422698756032552, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907461714483512490, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8910286191147517630, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913745671407502837, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918914412895023175, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935982843145875584, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936037336057664680, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8945530016181048999, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958866887331594921, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969978354579662062, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976313168900082139, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996033280226709301, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016738913824735483, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018805488425999395, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030438041192983469, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9077888743743690120, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085582459534264417, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104774191678269784, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107335254636812247, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120590895316154803, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147141411454191672, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151747430284805768, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153941547451062698, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195480088433731285, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198963120063929233, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216124058269624027, guid: 813642986a89f3a45a88639d20996f29,
+        type: 3}
+      propertyPath: m_ColorPropertyName
+      value: _RimColor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 813642986a89f3a45a88639d20996f29, type: 3}
+--- !u!4 &1154945068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 338423865605390595, guid: 813642986a89f3a45a88639d20996f29,
+    type: 3}
+  m_PrefabInstance: {fileID: 1154945067}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1174757867 stripped
 Transform:
@@ -16760,3 +19546,4 @@ SceneRoots:
   - {fileID: 1748715382}
   - {fileID: 2080182727}
   - {fileID: 365164069}
+  - {fileID: 150109720}
