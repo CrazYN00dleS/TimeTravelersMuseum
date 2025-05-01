@@ -1,0 +1,45 @@
+{
+    "name": "MinimapControls",
+    "maps": [
+        {
+            "name": "ToggleMinimap",
+            "id": "372ba69a-89df-4b31-916e-43fd2be340a5",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "3eb35ab9-ab0f-494f-8612-b80903b9fbc3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c3303f2d-95c0-46c6-9d72-5ad732ed6622",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2481778c-bc21-4486-a49c-5031fa4e042e",
+                    "path": "<XRSimulatedController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
