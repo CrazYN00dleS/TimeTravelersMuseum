@@ -38,6 +38,13 @@ public class MinimapFollower : MonoBehaviour
     private float nextRetryTime = 0f;
     private InputAction keyboardToggleAction;  // New field for keyboard input
     private CanvasGroup canvasGroup;
+    private bool isManuallyHidden = false; // Flag to track if user manually toggled the minimap off
+    private Transform m_GazeTransform;
+    private float m_MaxRenderingDistance = 10f;
+    private Vector2 m_MinMaxFacingThreshold = new Vector2(0f, 90f);
+    private Vector2 m_MinMaxThresholdDistance = new Vector2(0f, 10f);
+    private float m_FacingThreshold = 0f;
+    private bool m_InRange = false;
 
     private void Start()
     {
@@ -149,6 +156,12 @@ public class MinimapFollower : MonoBehaviour
         if (showDebugLogs)
             Debug.Log("[MinimapFollower] Toggle action performed!");
         ToggleMap();
+        
+        // Record that this was a manual toggle
+        if (canvasGroup != null)
+        {
+            isManuallyHidden = canvasGroup.alpha == 0;
+        }
     }
 
     private void TryFindControllers()
@@ -188,6 +201,9 @@ public class MinimapFollower : MonoBehaviour
 
     private void LateUpdate()
     {
+        // If manually hidden by user, don't update position until manually shown again
+        if (isManuallyHidden) return;
+        
         if (canvasGroup == null || canvasGroup.alpha == 0) return; // Skip movement updates if not visible
 
         // Periodically try to find controllers if they're missing
@@ -270,7 +286,11 @@ public class MinimapFollower : MonoBehaviour
         if (showDebugLogs)
             Debug.Log($"[MinimapFollower] Current visibility state (before toggle): {isCurrentlyVisible}, Alpha: {canvasGroup.alpha}");
 
+        // Toggle visibility
         SetMapVisibility(!isCurrentlyVisible);
+        
+        // Update manual toggle state
+        isManuallyHidden = !isCurrentlyVisible;
         
         if (showDebugLogs)
         {
@@ -286,6 +306,13 @@ public class MinimapFollower : MonoBehaviour
             canvasGroup.alpha = visible ? 1 : 0;
             canvasGroup.interactable = visible;
             canvasGroup.blocksRaycasts = visible;
+            
+            // Find and toggle the marker visibility as well
+            Transform markerTransform = transform.GetComponentInChildren<MinimapTeleporter>()?.markerTransform;
+            if (markerTransform != null)
+            {
+                markerTransform.gameObject.SetActive(visible);
+            }
         }
     }
 } 
