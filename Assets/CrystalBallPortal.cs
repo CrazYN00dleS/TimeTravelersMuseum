@@ -1,4 +1,4 @@
-// CrystalBallPortal.cs ¨C Updated: scene persists while holding, deactivates on release
+// CrystalBallPortal.cs ï¿½C Updated: scene persists while holding, deactivates on release
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;

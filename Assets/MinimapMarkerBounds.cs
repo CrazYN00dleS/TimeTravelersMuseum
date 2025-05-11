@@ -1,4 +1,4 @@
-// MinimapMarkerBounds.cs ¨C Updated: record initial marker position and expose reset to initial
+// MinimapMarkerBounds.cs - Updated: record initial marker position and expose reset to initial
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
