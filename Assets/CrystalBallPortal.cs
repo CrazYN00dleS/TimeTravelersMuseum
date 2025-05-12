@@ -1,13 +1,10 @@
-// CrystalBallPortal.cs �C Updated: scene persists while holding, deactivates on release
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.UI;
 using System.Collections;
 using GaussianSplatting.Runtime;
 using Unity.XR.CoreUtils;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using System.Collections.Generic;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
@@ -35,14 +32,17 @@ public class CrystalBallPortal : MonoBehaviour
     [Header("Teleport Timing")]
     public float teleportDelay = 0.5f;
 
+    [Header("Teleport Offset")]
+    public float verticalOffset = 0.5f;
+
     private XRGrabInteractable grabInteractable;
     private XRBaseInteractor heldBy;
     private bool teleportEnabled;
     private Vector3 selectedTeleportPoint;
 
     private bool isInPortal = false;
-    private Vector3 originalRigPosition;
     private Vector3 originalCameraPosition;
+    private string heldControllerTag;
 
     void Awake()
     {
@@ -60,13 +60,15 @@ public class CrystalBallPortal : MonoBehaviour
     private void OnGrab(SelectEnterEventArgs args)
     {
         heldBy = args.interactorObject as XRBaseInteractor;
+        heldControllerTag = heldBy.transform.tag;
+
         minimapMarker.GetComponent<MinimapMarkerBounds>().setPortal(this);
-        // Capture original position on first grab
+
         if (!isInPortal)
             originalCameraPosition = Camera.main.transform.position;
-            //originalRigPosition = xrOrigin.transform.position;
+
         selectedTeleportPoint = defaultTeleportTarget.transform.position;
-        // Always show scene and UI while holding
+
         sharedRenderer.m_Asset = myAsset;
         sharedRenderer.gameObject.SetActive(true);
         if (minimapUI) minimapUI.SetActive(true);
@@ -86,27 +88,26 @@ public class CrystalBallPortal : MonoBehaviour
     {
         if (!isInPortal)
         {
-            // On release, disable scene and UI
             heldBy = null;
+            heldControllerTag = "";
             teleportEnabled = false;
 
-            // Reset portal state
             isInPortal = false;
 
-            // Hide scene and UI
-            //sharedRenderer.gameObject.SetActive(false);
             sharedRenderer.m_Asset = null;
             if (minimapUI) minimapUI.SetActive(false);
             if (teleportMarker) teleportMarker.SetActive(false);
             if (minimapMarker) minimapMarker.GetComponent<MinimapMarkerBounds>().ResetToInitial();
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!teleportEnabled) return;
-        if (other.CompareTag(leftControllerTag) || other.CompareTag(rightControllerTag) || other.CompareTag("Player"))
+
+        // Only trigger if the OTHER controller enters the trigger
+        if ((other.CompareTag(leftControllerTag) && heldControllerTag != leftControllerTag) ||
+            (other.CompareTag(rightControllerTag) && heldControllerTag != rightControllerTag))
         {
             StartCoroutine(TeleportSequence());
         }
@@ -119,16 +120,15 @@ public class CrystalBallPortal : MonoBehaviour
 
         if (!isInPortal)
         {
-            //xrOrigin.transform.position = selectedTeleportPoint;
-            xrOrigin.MoveCameraToWorldLocation(selectedTeleportPoint);
-            teleportMarker.SetActive(false);//hide the in-scene marker to avoid blocking view
+            Vector3 adjustedTarget = selectedTeleportPoint + Vector3.up * verticalOffset;
+            xrOrigin.MoveCameraToWorldLocation(adjustedTarget);
+            teleportMarker.SetActive(false);
             isInPortal = true;
         }
         else
         {
-            // Exit portal: return to original position
-            //xrOrigin.transform.position = originalRigPosition;
-            xrOrigin.MoveCameraToWorldLocation(originalCameraPosition);
+            Vector3 adjustedReturn = originalCameraPosition;
+            xrOrigin.MoveCameraToWorldLocation(adjustedReturn);
             teleportMarker.SetActive(false);
             isInPortal = false;
         }
@@ -136,10 +136,6 @@ public class CrystalBallPortal : MonoBehaviour
         teleportEnabled = true;
     }
 
-    /// <summary>
-    /// Called by minimap UI to update the teleport destination.
-    /// Persisted until changed again.
-    /// </summary>
     public void SetTeleportTarget(Vector3 worldPos)
     {
         selectedTeleportPoint = worldPos;
