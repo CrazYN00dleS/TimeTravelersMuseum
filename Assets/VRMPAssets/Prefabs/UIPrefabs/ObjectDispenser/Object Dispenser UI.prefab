@@ -109,15 +109,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -282,15 +284,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -656,15 +660,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -745,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 724927441
+  GlobalObjectIdHash: 1571136499
   InScenePlacedSourceGlobalObjectIdHash: 724927441
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -775,7 +781,7 @@ MonoBehaviour:
     panel: {fileID: 5175314960186915574}
     dispenserSlots:
     - dispenserSlotTransform: {fileID: 1953130813007004718}
-      spawnableInteractablePrefab: {fileID: 2830529299010632263, guid: 03b5b70792ada814faf2ee37e49494bb,
+      spawnableInteractablePrefab: {fileID: 8600581062599558269, guid: 20f524aff2a63b14ab60dea40a392097,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 0
@@ -786,7 +792,7 @@ MonoBehaviour:
       hasSpawnedProxy: 0
       currentInteractable: {fileID: 0}
     - dispenserSlotTransform: {fileID: 6639984086052404292}
-      spawnableInteractablePrefab: {fileID: 4861196811161718231, guid: 8edf1e2f1e0f31c4fbb22ab6f39410ff,
+      spawnableInteractablePrefab: {fileID: -938176751279292834, guid: ba20882af416f364085858269184e8c9,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 0
@@ -797,7 +803,7 @@ MonoBehaviour:
       hasSpawnedProxy: 0
       currentInteractable: {fileID: 0}
     - dispenserSlotTransform: {fileID: 8567977360338430700}
-      spawnableInteractablePrefab: {fileID: 8498785142325208677, guid: 3abbeec9d2d345249bed17281fd04da0,
+      spawnableInteractablePrefab: {fileID: 1784249332748289964, guid: 347692c1a4056c849a587e70ea4af942,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 0
@@ -878,7 +884,7 @@ MonoBehaviour:
     panel: {fileID: 589184018689868901}
     dispenserSlots:
     - dispenserSlotTransform: {fileID: 6117489283072490173}
-      spawnableInteractablePrefab: {fileID: 2830529299010632263, guid: 8796078afc9f751409d99d00529facac,
+      spawnableInteractablePrefab: {fileID: 8600581062599558269, guid: 20f524aff2a63b14ab60dea40a392097,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 1
@@ -889,7 +895,7 @@ MonoBehaviour:
       hasSpawnedProxy: 0
       currentInteractable: {fileID: 0}
     - dispenserSlotTransform: {fileID: 1430645427011191511}
-      spawnableInteractablePrefab: {fileID: 4861196811161718231, guid: e304cc8bd9556dc44b907cc02d2de785,
+      spawnableInteractablePrefab: {fileID: -938176751279292834, guid: ba20882af416f364085858269184e8c9,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 1
@@ -900,7 +906,7 @@ MonoBehaviour:
       hasSpawnedProxy: 0
       currentInteractable: {fileID: 0}
     - dispenserSlotTransform: {fileID: 4114258387840259199}
-      spawnableInteractablePrefab: {fileID: 8498785142325208677, guid: 6b898ca13db57cd4ca11ba8283264518,
+      spawnableInteractablePrefab: {fileID: 1784249332748289964, guid: 347692c1a4056c849a587e70ea4af942,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 1
@@ -1308,15 +1314,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1693,7 +1701,7 @@ PrefabInstance:
     - target: {fileID: 2798817943360385121, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 3373735887
+      value: 1571136499
       objectReference: {fileID: 0}
     - target: {fileID: 2813846251216818365, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
@@ -2477,7 +2485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381160307753332800, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
-      propertyPath: m_ActiveFontFeatures.Array.data[0]
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8637005571024036736, guid: ca9d3693468c9a647890103db99627c6,
@@ -3025,7 +3033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5223664808865036441, guid: f6cdd1ad876cdde40a84d6f8f95ca7a4,
         type: 3}
-      propertyPath: m_ActiveFontFeatures.Array.data[0]
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5699171391121574187, guid: f6cdd1ad876cdde40a84d6f8f95ca7a4,
@@ -4283,7 +4291,7 @@ PrefabInstance:
     - target: {fileID: 2798817943360385121, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 4151302905
+      value: 1571136499
       objectReference: {fileID: 0}
     - target: {fileID: 2813846251216818365, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
@@ -5062,7 +5070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381160307753332800, guid: ca9d3693468c9a647890103db99627c6,
         type: 3}
-      propertyPath: m_ActiveFontFeatures.Array.data[0]
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8637005571024036736, guid: ca9d3693468c9a647890103db99627c6,
