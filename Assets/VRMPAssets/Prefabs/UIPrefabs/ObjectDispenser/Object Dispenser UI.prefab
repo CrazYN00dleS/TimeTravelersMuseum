@@ -781,7 +781,7 @@ MonoBehaviour:
     panel: {fileID: 5175314960186915574}
     dispenserSlots:
     - dispenserSlotTransform: {fileID: 1953130813007004718}
-      spawnableInteractablePrefab: {fileID: 8600581062599558269, guid: 20f524aff2a63b14ab60dea40a392097,
+      spawnableInteractablePrefab: {fileID: -2068778011518598432, guid: 259a568a83564f14daaa5fb1d6102ace,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
     panel: {fileID: 589184018689868901}
     dispenserSlots:
     - dispenserSlotTransform: {fileID: 6117489283072490173}
-      spawnableInteractablePrefab: {fileID: 8600581062599558269, guid: 20f524aff2a63b14ab60dea40a392097,
+      spawnableInteractablePrefab: {fileID: -2068778011518598432, guid: 259a568a83564f14daaa5fb1d6102ace,
         type: 3}
       objectSpawner: {fileID: 0}
       panelId: 1

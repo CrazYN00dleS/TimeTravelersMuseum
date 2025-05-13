@@ -346,6 +346,9 @@ public class MinimapTeleporter : MonoBehaviour
         {
             teleportMarkerVisual.SetActive(false);
         }
+        
+        // Reset marker to its original position after teleportation
+        ResetMarkerPosition();
     }
     
     // Public method to facilitate testing
