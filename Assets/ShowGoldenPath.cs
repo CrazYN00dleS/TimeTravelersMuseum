@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(LineRenderer))]
 public class ShowGoldenPath : MonoBehaviour
 {
-
+    public PlayerMiniMapMarker marker;
     public Transform target;
     private NavMeshPath path;
     private LineRenderer lineRenderer;
@@ -33,7 +33,9 @@ public class ShowGoldenPath : MonoBehaviour
         if (elapsed > 1.0f)
         {
             elapsed -= 1.0f;
-            NavMesh.CalculatePath(transform.position, target.position, NavMesh.AllAreas, path);
+            // NavMesh.CalculatePath(transform.position, target.position, NavMesh.AllAreas, path);
+            Vector3 destination = marker.GetWorldDestination();
+            NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
             UpdateLineRenderer();
         }
         for (int i = 0; i < path.corners.Length - 1; i++)

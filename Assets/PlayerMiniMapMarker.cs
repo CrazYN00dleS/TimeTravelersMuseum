@@ -24,6 +24,8 @@ public class PlayerMiniMapMarker: MonoBehaviour
     private Vector2 lastValidPosition;
     private XRGrabInteractable grabInteractable;
 
+    private Vector3 currentWorldDestination;
+
     void Awake()
     {
         m_AttractionPoint = GameObject.FindGameObjectWithTag("GuideAttraction");
@@ -125,6 +127,7 @@ public class PlayerMiniMapMarker: MonoBehaviour
             //if (portalController.teleportMarker != null)
             //    portalController.teleportMarker.transform.position = worldPos;
             //portalController.SetTeleportTarget(worldPos);
+            currentWorldDestination = worldPos + new Vector3(0, 1f, 0);
             if (m_AttractionPoint != null)
             {
                 m_AttractionPoint.transform.position = worldPos + new Vector3(0, 1f, 0);
@@ -145,5 +148,10 @@ public class PlayerMiniMapMarker: MonoBehaviour
     public void setPortal(CrystalBallPortal portal)
     {
         portalController = portal;
+    }
+
+    public Vector3 GetWorldDestination()
+    {
+        return currentWorldDestination;
     }
 }
