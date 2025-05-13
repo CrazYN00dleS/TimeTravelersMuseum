@@ -317,7 +317,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614662}
   - {fileID: 8926484042661614949}
   dataType: 0
-  capacity: 32
+  capacity: 1
   stripCapacity: 1
   particlePerStripCount: 32
   needsComputeBounds: 0
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_OutputSlots: []
   m_Disabled: 0
   m_ActivationSlot: {fileID: 8926484042661614856}
-  repeat: 0
+  repeat: 1
   spawnMode: 0
   delayMode: 0
 --- !u!114 &8926484042661614854
