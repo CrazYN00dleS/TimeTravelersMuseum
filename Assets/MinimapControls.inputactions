@@ -39,6 +39,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "NavigationMap",
+            "id": "b8c7ccd3-a8ab-411d-ac7b-cffad40f1037",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "20acf09f-9439-473e-b745-af85ed03a0e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dc395209-c0ee-4d34-8f43-384559681658",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eaace30f-fafa-42e1-967a-eb2106ef2a08",
+                    "path": "<XRSimulatedController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

@@ -125,6 +125,45 @@ public partial class @MinimapControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""NavigationMap"",
+            ""id"": ""b8c7ccd3-a8ab-411d-ac7b-cffad40f1037"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""20acf09f-9439-473e-b745-af85ed03a0e0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""dc395209-c0ee-4d34-8f43-384559681658"",
+                    ""path"": ""<XRController>{RightHand}/{SecondaryButton}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eaace30f-fafa-42e1-967a-eb2106ef2a08"",
+                    ""path"": ""<XRSimulatedController>{RightHand}/secondaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -132,11 +171,15 @@ public partial class @MinimapControls: IInputActionCollection2, IDisposable
         // ToggleMinimap
         m_ToggleMinimap = asset.FindActionMap("ToggleMinimap", throwIfNotFound: true);
         m_ToggleMinimap_Newaction = m_ToggleMinimap.FindAction("New action", throwIfNotFound: true);
+        // NavigationMap
+        m_NavigationMap = asset.FindActionMap("NavigationMap", throwIfNotFound: true);
+        m_NavigationMap_Newaction = m_NavigationMap.FindAction("New action", throwIfNotFound: true);
     }
 
     ~@MinimapControls()
     {
         UnityEngine.Debug.Assert(!m_ToggleMinimap.enabled, "This will cause a leak and performance issues, MinimapControls.ToggleMinimap.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_NavigationMap.enabled, "This will cause a leak and performance issues, MinimapControls.NavigationMap.Disable() has not been called.");
     }
 
     /// <summary>
@@ -304,12 +347,123 @@ public partial class @MinimapControls: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="ToggleMinimapActions" /> instance referencing this action map.
     /// </summary>
     public ToggleMinimapActions @ToggleMinimap => new ToggleMinimapActions(this);
+
+    // NavigationMap
+    private readonly InputActionMap m_NavigationMap;
+    private List<INavigationMapActions> m_NavigationMapActionsCallbackInterfaces = new List<INavigationMapActions>();
+    private readonly InputAction m_NavigationMap_Newaction;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "NavigationMap".
+    /// </summary>
+    public struct NavigationMapActions
+    {
+        private @MinimapControls m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public NavigationMapActions(@MinimapControls wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "NavigationMap/Newaction".
+        /// </summary>
+        public InputAction @Newaction => m_Wrapper.m_NavigationMap_Newaction;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_NavigationMap; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="NavigationMapActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(NavigationMapActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="NavigationMapActions" />
+        public void AddCallbacks(INavigationMapActions instance)
+        {
+            if (instance == null || m_Wrapper.m_NavigationMapActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_NavigationMapActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="NavigationMapActions" />
+        private void UnregisterCallbacks(INavigationMapActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="NavigationMapActions.UnregisterCallbacks(INavigationMapActions)" />.
+        /// </summary>
+        /// <seealso cref="NavigationMapActions.UnregisterCallbacks(INavigationMapActions)" />
+        public void RemoveCallbacks(INavigationMapActions instance)
+        {
+            if (m_Wrapper.m_NavigationMapActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="NavigationMapActions.AddCallbacks(INavigationMapActions)" />
+        /// <seealso cref="NavigationMapActions.RemoveCallbacks(INavigationMapActions)" />
+        /// <seealso cref="NavigationMapActions.UnregisterCallbacks(INavigationMapActions)" />
+        public void SetCallbacks(INavigationMapActions instance)
+        {
+            foreach (var item in m_Wrapper.m_NavigationMapActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_NavigationMapActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="NavigationMapActions" /> instance referencing this action map.
+    /// </summary>
+    public NavigationMapActions @NavigationMap => new NavigationMapActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "ToggleMinimap" which allows adding and removing callbacks.
     /// </summary>
     /// <seealso cref="ToggleMinimapActions.AddCallbacks(IToggleMinimapActions)" />
     /// <seealso cref="ToggleMinimapActions.RemoveCallbacks(IToggleMinimapActions)" />
     public interface IToggleMinimapActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "New action" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnNewaction(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "NavigationMap" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="NavigationMapActions.AddCallbacks(INavigationMapActions)" />
+    /// <seealso cref="NavigationMapActions.RemoveCallbacks(INavigationMapActions)" />
+    public interface INavigationMapActions
     {
         /// <summary>
         /// Method invoked when associated input action "New action" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
