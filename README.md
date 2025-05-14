@@ -124,7 +124,7 @@ Each scene has position, color, and other data files
 
 **TextMesh Pro/** - Text rendering system
 
-**VFXGraph/ **- Visual effects assets
+**VFXGraph/** - Visual effects assets
 
 **Video/** - Video content assets
 
