@@ -31,7 +31,7 @@
 2. Open the Unity project in Unity Hub.  
 3. Navigate to the `DemoScene` in the *Scenes* folder.  
 4. Press the **Play** button in Unity Editor.  
-5. On the startup UI in VR, click **Join Room** to begin the experience.  
+5. On this menu, click **Confirm** to create a lobby and start the experience 
 <img width="203" alt="image" src="https://github.com/user-attachments/assets/d30dbdaa-2952-4d4f-b9e8-d5c32e60a171" />
 
 
