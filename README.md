@@ -30,23 +30,23 @@ Root Structure
 
 **Library/** - Unity cache files
 
-Logs/ - Unity log files
+**Logs/** - Unity log files
 
-Packages/ - Unity package dependencies
+**Packages/** - Unity package dependencies
 
-ProjectSettings/ - Unity project configuration
+**ProjectSettings/** - Unity project configuration
 
-UserSettings/ - User-specific Unity settings
+**UserSettings/** - User-specific Unity settings
 
-.vs/ - Visual Studio configuration files
+**.vs/** - Visual Studio configuration files
 
-obj/ - Compiled code objects
+**obj/** - Compiled code objects
 
-Various .csproj files - C# project files for different components
+Various **.csproj** files - C# project files for different components
 
-TimeTravelersMuseum.sln - Visual Studio solution file
+**TimeTravelersMuseum.sln** - Visual Studio solution file
 
-README.md - Project documentation
+**README.md** - Project documentation
 
 Assets Directory (Main Content)
 
