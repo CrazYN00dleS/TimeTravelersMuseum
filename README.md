@@ -24,11 +24,11 @@
 Time Traveler's Museum - Directory Overview
 Root Structure
 
-.git/ - Git version control directory
+**.git/** - Git version control directory
 
-Assets/ - Main Unity project assets
+**Assets/** - Main Unity project assets
 
-Library/ - Unity cache files
+**Library/** - Unity cache files
 
 Logs/ - Unity log files
 
@@ -127,7 +127,6 @@ VFXGraph/ - Visual effects assets
 Video/ - Video content assets
 
 Resources/ - Unity resource assets
-
 ---
 
 ## Deployment Instructions
