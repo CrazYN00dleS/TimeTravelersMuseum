@@ -128,7 +128,6 @@ Each scene has position, color, and other data files
 
 **Video/** - Video content assets
 
-Resources/ - Unity resource assets
 ---
 
 ## Deployment Instructions
