@@ -48,83 +48,85 @@ Various **.csproj** files - C# project files for different components
 
 **README.md** - Project documentation
 
-Assets Directory (Main Content)
+**Assets Directory (Main Content)**
 
-Scenes/ - Unity scenes including:
+**Scenes/** - Unity scenes including:
 
-DemoScene.unity - Main demonstration scene
+**DemoScene.unity** - Main demonstration scene
 
-SampleScene.unity - Sample development scene
+**SampleScene.unity** - Sample development scene
 
-BasicScene.unity - Basic testing scene
+**BasicScene.unity** - Basic testing scene
 
-GSScene.unity and GSTestScene.unity - Gaussian Splatting test scenes
+**GSScene.unity** and **GSTestScene.unity** - Gaussian Splatting test scenes
 
-Scripts/ - C# scripts including:
+**Scripts/** - C# scripts including:
 
-SnapToFrame.cs - Frame alignment functionality
+**SnapToFrame.cs** - Frame alignment functionality
 
-Various minimap scripts: MinimapControls.cs, MinimapTeleporter.cs, PlayerMiniMapMarker.cs
+Various minimap scripts:
 
-ShowGoldenPath.cs - Navigation guidance system
+**MinimapControls.cs, MinimapTeleporter.cs, PlayerMiniMapMarker.cs**
 
-CrystalBallPortal.cs - Interactive portal functionality
+**ShowGoldenPath.cs** - Navigation guidance system
 
-SelfGuidingFire.cs - Guide fire behavior
+**CrystalBallPortal.cs** - Interactive portal functionality
 
-GaussianAssets/ - 3D assets using Gaussian Splatting technique
+**SelfGuidingFire.cs** - Guide fire behavior
 
-Multiple scene data files (columbia, cherry noosso, car_undersea, etc.)
+**GaussianAssets/** - 3D assets using Gaussian Splatting technique
+
+**Multiple scene data files** (columbia, cherry noosso, car_undersea, etc.)
 
 Each scene has position, color, and other data files
 
-Prefab/ - Predefined Unity game objects
+**Prefab/** - Predefined Unity game objects
 
-Furniture/ - Furniture models and setups
+**Furniture/** - Furniture models and setups
 
-Decoration/ - Decorative elements including:
+**Decoration/** - Decorative elements including:
 
-Crystal Ball objects
+**Crystal Ball objects**
 
-Guide elements like GuideFire and GuiderLantern
+**Guide elements like GuideFire and GuiderLantern**
 
-Museum artifacts and decorative items
+**Museum artifacts and decorative items**
 
-VRMPAssets/ - VR Multiplayer specific assets
+**VRMPAssets/** - VR Multiplayer specific assets
 
-Scripts/ - VR interaction code
+**Scripts/** - VR interaction code
 
-UI/ - User interface elements
+**UI/** - User interface elements
 
-Network/ - Networking functionality
+**Network/** - Networking functionality
 
-Player/ - Player controls and interaction
+**Player/** - Player controls and interaction
 
-Helpers/ - Utility scripts
+**Helpers/** - Utility scripts
 
-Gameplay/ - Core gameplay mechanics
+**Gameplay/** - Core gameplay mechanics
 
-Prefabs/ - VR-specific prefabricated objects
+**Prefabs/** - VR-specific prefabricated objects
 
-Materials/ - Material definitions
+**Materials/** - Material definitions
 
-Textures/ - Visual textures
+**Textures/** - Visual textures
 
-Animation/ - Animation assets
+**Animation/** - Animation assets
 
-Material/ - Material definitions for objects
+**Material/** - Material definitions for objects
 
-RenderTexture/ - Assets for rendering to textures
+**RenderTexture/** - Assets for rendering to textures
 
-RealWorldObjects/ - Real-world object models
+**RealWorldObjects/** - Real-world object models
 
-XR/ and XRI/ - XR Interaction Toolkit assets
+**XR/** and **XRI/** - XR Interaction Toolkit assets
 
-TextMesh Pro/ - Text rendering system
+**TextMesh Pro/** - Text rendering system
 
-VFXGraph/ - Visual effects assets
+**VFXGraph/ **- Visual effects assets
 
-Video/ - Video content assets
+**Video/** - Video content assets
 
 Resources/ - Unity resource assets
 ---
