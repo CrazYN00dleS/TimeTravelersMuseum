@@ -21,7 +21,25 @@
 
 ## Directory Structure
 
-> *(Please add a summary of key folders and files here — e.g., Assets/, Scenes/, Scripts/, etc.)*
+- **Assets/**  
+  Contains all prefabs, materials, scripts, and project assets used throughout development.
+
+- **Scenes/**  
+  Includes the main scene:  
+  - `DemoScene`: Delivers the full interactive experience of the *Time Traveler's Museum*.
+
+---
+
+## Branch Information
+
+- **Main Branch**  
+  This project depends on the UnityGaussianSplatting package, available on GitHub.
+  (https://github.com/aras-p/UnityGaussianSplatting)
+  After downloading or cloning the package, place it in the following directory:
+  D:\UnityProject\UnityGaussianSplatting\UnityGaussianSplatting-main. 
+- **Yifan_PackageMerge Branch**  
+Use this branch if you're encountering issues importing `UnityGaussianSplatting`.  
+It includes merged dependencies and is ready to run without external downloads.
 
 ---
 
@@ -65,5 +83,6 @@ None.
 ---
 
 ## Asset Sources
-
-> *(Please include a list of asset sources, licenses, or links used in the project here.)*
+1. https://assetstore.unity.com/packages/3d/props/electronics/speakers-pbr-111606
+2. https://assetstore.unity.com/packages/3d/environments/apartment-kit-124055
+3. https://assetstore.unity.com/packages/3d/props/interior/picture-frames-with-photos-106907
