@@ -63,7 +63,7 @@ No special preparation required.
 
 ## Demo Video
 
-> *(Please insert your demo video URL here once available.)*
+https://www.youtube.com/watch?v=70AXMX04cZU
 
 ---
 
