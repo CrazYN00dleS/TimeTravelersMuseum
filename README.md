@@ -145,14 +145,15 @@ It includes merged dependencies and is ready to run without external downloads.
 
 ## Deployment Instructions
 
-1. Connect Meta Quest 3 to your Windows machine using a Link Cable.
-2. In Project Settings -> OpenXR -> Render Mode, to Multi-pass
+1. Clone the project
+2. Open the project in Unity Hub.
+3. Navigate to the `DemoScene` in the *Scenes* folder.  
+4. Connect Meta Quest 3 to your Windows machine using a Link Cable.
+5. In Project Settings -> OpenXR -> Render Mode, to Multi-pass
 <img width="587" alt="image" src="https://github.com/user-attachments/assets/94452a03-018d-4551-ab53-bf53a5d144d0" />
 
-3. Open the Unity project in Unity Hub.  
-4. Navigate to the `DemoScene` in the *Scenes* folder.  
-5. Press the **Play** button in Unity Editor.  
-6. On this menu, click **Confirm** to create a lobby and start the experience 
+6. Press the **Play** button in Unity Editor. (remember to disable the simulator)
+7. On this menu, click **Confirm** to create a lobby and start the experience 
 <img width="203" alt="image" src="https://github.com/user-attachments/assets/d30dbdaa-2952-4d4f-b9e8-d5c32e60a171" />
 
 
