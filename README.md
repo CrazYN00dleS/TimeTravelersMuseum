@@ -148,6 +148,7 @@ It includes merged dependencies and is ready to run without external downloads.
 1. Connect Meta Quest 3 to your Windows machine using a Link Cable.
 2. In Project Settings -> OpenXR -> Render Mode, to Multi-pass
 <img width="587" alt="image" src="https://github.com/user-attachments/assets/94452a03-018d-4551-ab53-bf53a5d144d0" />
+
 3. Open the Unity project in Unity Hub.  
 4. Navigate to the `DemoScene` in the *Scenes* folder.  
 5. Press the **Play** button in Unity Editor.  
