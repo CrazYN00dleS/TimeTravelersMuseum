@@ -141,7 +141,7 @@ public class MinimapTeleporter : MonoBehaviour
         }
         else
         {
-            Debug.LogError("[MinimapTeleporter] No marker transform assigned!");
+            //Debug.LogError("[MinimapTeleporter] No marker transform assigned!");
         }
     }
     

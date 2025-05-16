@@ -222,8 +222,8 @@ public class MinimapFollower : MonoBehaviour
         {
             if (!hasLoggedError && showDebugLogs)
             {
-                Debug.LogError($"[MinimapFollower] Target {targetToFollow} is missing! Check if the object exists and has the correct tag.");
-                hasLoggedError = true;
+                //Debug.LogError($"[MinimapFollower] Target {targetToFollow} is missing! Check if the object exists and has the correct tag.");
+                //hasLoggedError = true;
             }
             return;
         }
