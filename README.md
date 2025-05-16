@@ -21,12 +21,112 @@
 
 ## Directory Structure
 
-- **Assets/**  
-  Contains all prefabs, materials, scripts, and project assets used throughout development.
+Time Traveler's Museum - Directory Overview
+Root Structure
 
-- **Scenes/**  
-  Includes the main scene:  
-  - `DemoScene`: Delivers the full interactive experience of the *Time Traveler's Museum*.
+**.git/** - Git version control directory
+
+**Assets/** - Main Unity project assets
+
+**Library/** - Unity cache files
+
+**Logs/** - Unity log files
+
+**Packages/** - Unity package dependencies
+
+**ProjectSettings/** - Unity project configuration
+
+**UserSettings/** - User-specific Unity settings
+
+**.vs/** - Visual Studio configuration files
+
+**obj/** - Compiled code objects
+
+Various **.csproj** files - C# project files for different components
+
+**TimeTravelersMuseum.sln** - Visual Studio solution file
+
+**README.md** - Project documentation
+
+**Assets Directory (Main Content)**
+
+**Scenes/** - Unity scenes including:
+
+**DemoScene.unity** - Main demonstration scene
+
+**SampleScene.unity** - Sample development scene
+
+**BasicScene.unity** - Basic testing scene
+
+**GSScene.unity** and **GSTestScene.unity** - Gaussian Splatting test scenes
+
+**Scripts/** - C# scripts including:
+
+**SnapToFrame.cs** - Frame alignment functionality
+
+Various minimap scripts:
+
+**MinimapControls.cs, MinimapTeleporter.cs, PlayerMiniMapMarker.cs**
+
+**ShowGoldenPath.cs** - Navigation guidance system
+
+**CrystalBallPortal.cs** - Interactive portal functionality
+
+**SelfGuidingFire.cs** - Guide fire behavior
+
+**GaussianAssets/** - 3D assets using Gaussian Splatting technique
+
+**Multiple scene data files** (columbia, cherry noosso, car_undersea, etc.)
+
+Each scene has position, color, and other data files
+
+**Prefab/** - Predefined Unity game objects
+
+**Furniture/** - Furniture models and setups
+
+**Decoration/** - Decorative elements including:
+
+**Crystal Ball objects**
+
+**Guide elements like GuideFire and GuiderLantern**
+
+**Museum artifacts and decorative items**
+
+**VRMPAssets/** - VR Multiplayer specific assets
+
+**Scripts/** - VR interaction code
+
+**UI/** - User interface elements
+
+**Network/** - Networking functionality
+
+**Player/** - Player controls and interaction
+
+**Helpers/** - Utility scripts
+
+**Gameplay/** - Core gameplay mechanics
+
+**Prefabs/** - VR-specific prefabricated objects
+
+**Materials/** - Material definitions
+
+**Textures/** - Visual textures
+
+**Animation/** - Animation assets
+
+**Material/** - Material definitions for objects
+
+**RenderTexture/** - Assets for rendering to textures
+
+**RealWorldObjects/** - Real-world object models
+
+**XR/** and **XRI/** - XR Interaction Toolkit assets
+
+**TextMesh Pro/** - Text rendering system
+
+**VFXGraph/** - Visual effects assets
+
+**Video/** - Video content assets
 
 ---
 
@@ -63,7 +163,7 @@ No special preparation required.
 
 ## Demo Video
 
-> *(Please insert your demo video URL here once available.)*
+https://www.youtube.com/watch?v=70AXMX04cZU
 
 ---
 
